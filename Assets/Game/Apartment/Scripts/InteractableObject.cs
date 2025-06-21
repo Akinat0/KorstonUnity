@@ -14,6 +14,8 @@ public class InteractableObject : MonoBehaviour
     
     void OnMouseDown()
     {
+        Communication.SendMessageToFlutter("Click on " + gameObject.name);
+        
         if (!controller.CurrentInteractable)
         {
             onMouseDownEvent?.Invoke();

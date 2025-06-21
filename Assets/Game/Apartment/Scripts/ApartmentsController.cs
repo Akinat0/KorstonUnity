@@ -26,7 +26,6 @@ public class ApartmentsController : MonoBehaviour
     
     void Update()
     {
-
         if (scroller.IsDragging)
         {
             
