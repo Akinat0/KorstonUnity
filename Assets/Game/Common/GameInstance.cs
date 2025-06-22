@@ -5,7 +5,7 @@ public class GameInstance : MonoBehaviour
 {
     Messenger messenger;
     
-    void Start()
+    void Awake()
     {
         messenger = gameObject.AddComponent<Messenger>();
         Communication.SendMessageToFlutter("unity_started");
