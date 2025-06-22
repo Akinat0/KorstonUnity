@@ -7,10 +7,9 @@ public static class Communication
     static extern void SendToFlutter(string message);
 
     public static void SendMessageToFlutter(string content) {
+        Debug.Log("Send Message To Flutter: " + content);
 #if UNITY_WEBGL && !UNITY_EDITOR
         SendToFlutter(content);
-#else
-        Debug.Log("Send Message To Flutter: " + content);
 #endif
     }
 }
